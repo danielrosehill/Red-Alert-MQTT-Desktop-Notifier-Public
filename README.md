@@ -11,6 +11,14 @@ A Python application that listens to a specified MQTT topic from Home Assistant 
 - Right-click menu for testing notifications, reconnecting, and viewing status
 - Can run as a systemd service for automatic startup
 
+
+## Screenshots
+
+![alt text](screenshots/1.png)
+
+
+![alt text](screenshots/2.png)
+
 ## Prerequisites
 
 - Python 3
