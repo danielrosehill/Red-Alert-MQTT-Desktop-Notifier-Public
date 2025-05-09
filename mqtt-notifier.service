@@ -1,0 +1,14 @@
+[Unit]
+Description=MQTT Desktop Notifier with System Tray
+After=network-online.target graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash %h/path/to/Red-Alert-MQTT-Desktop-Notifier/start_notifier.sh
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=%h/.Xauthority"
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
