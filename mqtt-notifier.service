@@ -4,7 +4,7 @@ After=network-online.target graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash %h/path/to/Red-Alert-MQTT-Desktop-Notifier/start_notifier.sh
+ExecStart=/bin/bash %h/path/to/Red-Alert-MQTT-Desktop-Notifier-Public/start_notifier.sh
 Environment="DISPLAY=:0"
 Environment="XAUTHORITY=%h/.Xauthority"
 Restart=on-failure
